@@ -21,7 +21,11 @@
 @class Reward;
 
 // Events
+#define EVENT_UP_PROFILE_INITIALIZED            @"up_profile_initialized"
+
 #define EVENT_UP_USER_PROFILE_UPDATED           @"up_user_profile_updated"
+
+#define EVENT_UP_USER_RATING                    @"up_user_rating"
 
 #define EVENT_UP_LOGIN_STARTED                  @"up_login_started"
 #define EVENT_UP_LOGIN_FINISHED                 @"up_login_finished"
@@ -74,7 +78,17 @@
 + (void)observeAllEventsWithObserver:(id)observer withSelector:(SEL)selector;
 
 /**
- Called when when a user profile from a provider has been retrieved
+Called when the service has been initializedt.
+*/
++ (void)postProfileInitialized;
+
+/**
+ Called when the app's rating page is opened
+ */
++ (void)postUserRating;
+
+/**
+ Called when a user profile from a provider has been retrieved
  and updated in the device's local storage. Which fires the 
  `EVENT_UP_USER_PROFILE_UPDATED` event.
  
