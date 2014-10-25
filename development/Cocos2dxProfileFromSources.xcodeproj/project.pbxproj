@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		372B70DFA5CD93E38AFB90C3 /* CCSimpleProfileEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 372B777DDCB11FBA98C1727C /* CCSimpleProfileEventHandler.h */; };
 		372B7168B0A6716FA771BC2E /* CCSimpleProfileEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372B7DB62676E19414C8B46A /* CCSimpleProfileEventHandler.cpp */; };
+		67B2275819FB6F8D001E6A7F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2275719FB6F8D001E6A7F /* FacebookSDK.framework */; };
 		C0B3C5F3168C6D0C00161FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3C5F2168C6D0C00161FAA /* Foundation.framework */; };
 		F825C0F119B31D8100A2CABB /* ProfileService.h in Headers */ = {isa = PBXBuildFile; fileRef = F825C0EF19B31D8100A2CABB /* ProfileService.h */; };
 		F825C0F219B31D8100A2CABB /* ProfileService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F825C0F019B31D8100A2CABB /* ProfileService.mm */; };
@@ -45,7 +46,6 @@
 		F84F251E19C86BFD00DB0905 /* CCSoomlaProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = F84F251C19C86BFD00DB0905 /* CCSoomlaProfile.h */; };
 		F88C15F919C7309800889606 /* SoomlaFacebook.h in Headers */ = {isa = PBXBuildFile; fileRef = F88C15F719C7309800889606 /* SoomlaFacebook.h */; };
 		F88C15FA19C7309800889606 /* SoomlaFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = F88C15F819C7309800889606 /* SoomlaFacebook.m */; };
-		F88C160A19C7318C00889606 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88C15FB19C7314800889606 /* FacebookSDK.framework */; };
 		F8DBEC7F19BDB38D0093252C /* CCProfileConsts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DBEC6E19BDB38D0093252C /* CCProfileConsts.cpp */; };
 		F8DBEC8019BDB38D0093252C /* CCProfileConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DBEC6F19BDB38D0093252C /* CCProfileConsts.h */; };
 		F8DBEC8319BDB38D0093252C /* CCProfileEventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DBEC7219BDB38D0093252C /* CCProfileEventDispatcher.cpp */; };
@@ -65,6 +65,7 @@
 /* Begin PBXFileReference section */
 		372B777DDCB11FBA98C1727C /* CCSimpleProfileEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSimpleProfileEventHandler.h; sourceTree = "<group>"; };
 		372B7DB62676E19414C8B46A /* CCSimpleProfileEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSimpleProfileEventHandler.cpp; sourceTree = "<group>"; };
+		67B2275719FB6F8D001E6A7F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../proj.ios/libs/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		C0B3C5EF168C6D0C00161FAA /* libCocos2dxProfileFromSources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocos2dxProfileFromSources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B3C5F2168C6D0C00161FAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F825C0EF19B31D8100A2CABB /* ProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileService.h; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		F84F251C19C86BFD00DB0905 /* CCSoomlaProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSoomlaProfile.h; sourceTree = "<group>"; };
 		F88C15F719C7309800889606 /* SoomlaFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoomlaFacebook.h; sourceTree = "<group>"; };
 		F88C15F819C7309800889606 /* SoomlaFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoomlaFacebook.m; sourceTree = "<group>"; };
-		F88C15FB19C7314800889606 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = "submodules/ios-profile/FacebookSDK.framework"; sourceTree = "<group>"; };
 		F8DBEC6E19BDB38D0093252C /* CCProfileConsts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCProfileConsts.cpp; sourceTree = "<group>"; };
 		F8DBEC6F19BDB38D0093252C /* CCProfileConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCProfileConsts.h; sourceTree = "<group>"; };
 		F8DBEC7219BDB38D0093252C /* CCProfileEventDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCProfileEventDispatcher.cpp; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B3C5F3168C6D0C00161FAA /* Foundation.framework in Frameworks */,
-				F88C160A19C7318C00889606 /* FacebookSDK.framework in Frameworks */,
+				67B2275819FB6F8D001E6A7F /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +155,7 @@
 		C0B3C5F1168C6D0C00161FAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F88C15FB19C7314800889606 /* FacebookSDK.framework */,
+				67B2275719FB6F8D001E6A7F /* FacebookSDK.framework */,
 				C0B3C5F2168C6D0C00161FAA /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -468,6 +468,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/submodules/ios-profile",
+					"/Volumes/DATOS/Desarrollo/gtc-js/proj.ios/libs/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
@@ -511,6 +512,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/submodules/ios-profile",
+					"/Volumes/DATOS/Desarrollo/gtc-js/proj.ios/libs/FacebookSDK",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
