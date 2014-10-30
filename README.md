@@ -96,6 +96,8 @@ In your XCode project, perform the following steps:
     1. Add the Products (\*.a) of these projects to **Build Phases->Link Binary With Libraries**.
 
 1. Add the following directories to **Build Settings->Header Search Paths** (with `recursive` option):
+> This article assumes you have a `cocos2d` folder under your project folder and which either contains the Cocos2d-x framework, or links to to its root folder
+
  - `$(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/Soomla/**`
  - `$(SRCROOT)/../cocos2d/extensions/soomla-cocos2dx-core/build/ios/headers/**`
  - `$(SRCROOT)/../cocos2d/extensions/cocos2dx-profile/Soomla/**`
@@ -120,6 +122,8 @@ In your XCode project, perform the following steps:
 1. The following steps should be done according to the target social network:
 
   ##### Facebook
+
+  1. Add the `libSoomlaiOSProfileFacebook.a` from `extensions/cocos2dx-profile/build/ios` to your **BuildPhases->Link Binary With Libraries**
 
   1. Add the Facebook SDK for iOS to the project's Frameworks and make sure your project links to the project
 
@@ -194,6 +198,8 @@ That's it! Now all you have to do is build your XCode project and run your game 
 1. The following steps should be done according to the target social network:
 
   ##### Facebook
+
+  1. Add the `AndroidProfileFacebook.jar` to your android project's classpath from `extensions/cocos2dx-profile/build/android`
 
   1. Import the Facebook SDK for Android into your project
 
@@ -304,6 +310,11 @@ You can enable debug logging in cocos2dx-profile by setting `SOOMLA_DEBUG` in `C
 If you want to see debug messages from _android-profile_, set the `logDebug` variable in `com.soomla.store.StoreConfig` to `true`.
 
 To see debug messages on iOS, make sure you have also `DEBUG=1` in your Build Settings' `Preprocessor Macros` (for Debug only).
+
+## Facebook Caveats
+
+1. See [iOS Facebook Caveats](https://github.com/soomla/ios-profile#facebook-caveats)
+1. See [Android Facebook Caveats](https://github.com/soomla/android-profile#facebook-caveats)
 
 
 ## Working with sources
