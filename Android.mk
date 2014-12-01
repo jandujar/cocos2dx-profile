@@ -21,4 +21,4 @@ LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)/Soomla/domain
 
 include $(BUILD_STATIC_LIBRARY)
 
-$(call import-module,extensions/soomla-cocos2dx-core)
+$(call import-module,soomla-cocos2dx-core)

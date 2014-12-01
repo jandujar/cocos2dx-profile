@@ -540,7 +540,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -561,7 +561,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -575,8 +575,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/submodules/ios-profile",
-					"$(PROJECT_DIR)/submodules/ios-profile/social-providers/ios-profile-facebook/libs",
-					"$(PROJECT_DIR)/submodules/ios-profile/social-providers/ios-profile-google/libs",
+					"/Volumes/DATOS/Desarrollo/gtc-js/proj.ios/libs/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
@@ -588,14 +587,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../cocos2dx",
-					"$(SRCROOT)/../../../cocos2dx/include",
-					"$(SRCROOT)/../../../cocos2dx/kazmath/include",
-					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
-					"$(SRCROOT)/../../../cocos2dx/platform/ios",
-					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					"$(SRCROOT)/../../../external/jansson",
-					"$(SRCROOT)/submodules/ios-profile/social-providers/ios-profile-twitter/STTwitter/**",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/include",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/kazmath/include",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/third_party/ios",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/ios",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/ios/Simulation",
+					"$(SRCROOT)/../../proj.ios/libs/jansson",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/Soomla/**",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/development/soomla-native/projects/cocos2dx-ios-core/CoreCocos2dx/**",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/development/submodules/soomla-ios-core/SoomlaiOSCore/**",
@@ -622,7 +620,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/submodules/ios-profile",
-					"$(PROJECT_DIR)/submodules/ios-profile/social-providers/ios-profile-facebook/libs",
+					"/Volumes/DATOS/Desarrollo/gtc-js/proj.ios/libs/FacebookSDK",
 					"$(PROJECT_DIR)/submodules/ios-profile/social-providers/ios-profile-google/libs",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -632,14 +630,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../cocos2dx",
-					"$(SRCROOT)/../../../cocos2dx/include",
-					"$(SRCROOT)/../../../cocos2dx/kazmath/include",
-					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
-					"$(SRCROOT)/../../../cocos2dx/platform/ios",
-					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					"$(SRCROOT)/../../../external/jansson",
-					"$(SRCROOT)/submodules/ios-profile/social-providers/ios-profile-twitter/STTwitter/**",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/include",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/kazmath/include",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/third_party/ios",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/ios",
+					"$(SRCROOT)/../../cocos2d-x/cocos2dx/platform/ios/Simulation",
+					"$(SRCROOT)/../../proj.ios/libs/jansson",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/Soomla/**",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/development/soomla-native/projects/cocos2dx-ios-core/CoreCocos2dx/**",
 					"$(SRCROOT)/../../soomla-cocos2dx-core/development/submodules/soomla-ios-core/SoomlaiOSCore/**",
